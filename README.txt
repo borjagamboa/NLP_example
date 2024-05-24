@@ -1,5 +1,5 @@
 
-FILES:
+### FILES:
 
 	1. NLP_methods.py
 	    Contains my own methods based on light modifications of the defined methods of the NLTK book
@@ -9,8 +9,11 @@ FILES:
 		I am using Bigram Tagging for the words and three different methods for chunking. The idea is to simulate a
 		order processing tool for a restaurant.
 	
-	2. GUI.py
+	2. GUI_one_parser.py
 	    Just a simple GUI to test the models. It parses the sentence once to identify food and quantity
+
+	2. GUI_two_parsers.py
+	    Same example but chunking twice. First to recognise the order and second to recognise food and quantity
 
 	3. GUI_dosparsers.py
 		Same GUI, it parses the sentence twice though. At first it identifies the order and then it parses the order to
@@ -22,7 +25,7 @@ FILES:
 	5.ConsecutiveNPChunkTagger_trained.p, trained_spanish_tagger.p, Trained_unigram_chunker_None.py
 	    Trained models that can be used to save time. They must be refresh once the grammar is modified.
 
-IMPROVEMENTS:
+### FURTHER IMPROVEMENTS:
 	- Bigger corpus and more train sentences
 	- Cleaner coding and structure
 	- Split GUI and methods
